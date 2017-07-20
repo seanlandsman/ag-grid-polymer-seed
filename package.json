@@ -1,0 +1,29 @@
+{
+  "name": "ag-grid-polymer-seed",
+  "version": "12.0.0",
+  "description": "ag-Grid Polymer Web Component Seed",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceolter/ag-grid-polymer-seed.git"
+  },
+  "keywords": [
+    "ag-grid",
+    "polymer",
+    "seed"
+  ],
+  "author": "Sean Landsman <sean@thelandsmans.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceolter/ag-grid-polymer-seed/issues"
+  },
+  "homepage": "https://github.com/ceolter/ag-grid-polymer-seed#readme",
+  "devDependencies": {
+    "bower": "1.8.0",
+    "lite-server": "^2.3.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ag-grid-polymer-seed",
+  "homepage": "https://github.com/ceolter/ag-grid-polymer-seed",
+  "authors": [
+    "Sean Landsman <sean@thelandsmans.com>"
+  ],
+  "description": "ag-Grid Polymer Web Component Seed Project",
+  "main": "",
+  "keywords": [
+    "ag-grid",
+    "polymer",
+    "seed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ag-grid": "^11.0.0",
+    "ag-grid-polymer": "^0.0.9",
+    "polymer": "^2.0.2"
+  }
+}
