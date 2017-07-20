@@ -1,0 +1,42 @@
+<link rel="import" href="red-cell-renderer.html">
+<dom-module id="simple-grid">
+    <template>
+        <link rel="stylesheet" href="bower_components/ag-grid/dist/styles/ag-grid.css">
+        <link rel="stylesheet" href="bower_components/ag-grid/dist/styles/theme-fresh.css">
+
+        <h1>Simple ag-Grid Polymer Example</h1>
+        <ag-grid-polymer style="width: 500px; height: 120px; display: block;"
+                         class="ag-fresh"
+                         rowData="{{rowData}}"
+                         columnDefs="{{columnDefs}}"
+                         onGridReady="{{onGridReady}}"></ag-grid-polymer>
+    </template>
+    <script>
+        class SimpleGrid extends Polymer.Element {
+            static get is() {
+                return "simple-grid";
+            }
+
+            constructor() {
+                super();
+
+                this.rowData = [
+                    {make: "Toyota", model: "Celica", price: 35000},
+                    {make: "Ford", model: "Mondeo", price: 32000},
+                    {make: "Porsche", model: "Boxter", price: 72000}
+                ];
+
+                this.columnDefs = [
+                    {headerName: "Make", field: "make"},
+                    {headerName: "Model", field: "model", cellRendererFramework: 'red-cell-renderer'},
+                    {headerName: "Price", field: "price"}
+                ];
+            }
+
+            onGridReady() {
+                this.api.sizeColumnsToFit();
+            }
+        }
+        customElements.define(SimpleGrid.is, SimpleGrid);
+    </script>
+</dom-module>

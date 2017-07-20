@@ -1,0 +1,19 @@
+<dom-module id="red-cell-renderer">
+    <template>
+        <span style="color: red">{{value}}</span>
+    </template>
+    <script>
+        class RedCellRenderer extends Polymer.Element {
+            static get is() {
+                return "red-cell-renderer";
+            }
+
+            agInit(params) {
+                this.params = params;
+
+                this.value = this.params.value;
+            }
+        }
+        customElements.define(RedCellRenderer.is, RedCellRenderer);
+    </script>
+</dom-module>
