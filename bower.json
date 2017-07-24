@@ -20,8 +20,8 @@
     "tests"
   ],
   "dependencies": {
-    "ag-grid": "^11.0.0",
-    "ag-grid-polymer": "^0.0.9",
+    "ag-grid": "12.0.0",
+    "ag-grid-polymer": "12.0.0",
     "polymer": "^2.0.2"
   }
 }
